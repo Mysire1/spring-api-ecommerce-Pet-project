@@ -84,7 +84,7 @@ public class AuthenticationService {
             sendVerificationEmail(user1);
             userRepository.save(user1);
         } else {
-            throw new RuntimeException("User not found!");
+            throw new NullPointerException("User not found!");
         }
     }
 
